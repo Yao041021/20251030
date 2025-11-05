@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #f0f0f0;
+}
+
+/* 讓 canvas 佔滿整個視窗，並移除預設間距 */
+canvas {
+  display: block;
+  /* 由 p5.js 透過 createCanvas(windowWidth, windowHeight) 來控制尺寸，
+     不要用 CSS 拉伸 canvas（會讓繪圖座標與顯示位置不一致） */
+}
+
+/* 預設滑鼠樣式可以在 sketch 中覆寫 (cursor()) */
+body, canvas {
+  cursor: default;
+}
